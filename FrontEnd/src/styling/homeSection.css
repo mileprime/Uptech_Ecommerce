@@ -1,0 +1,212 @@
+/* Gradient Box Styling */
+.gradient-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 0) 0%,
+    rgba(31, 31, 31, 0.6) 100%
+  );
+  border-radius: 24px;
+  padding: 32px 32px 300px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Gradient Image Styling */
+.gradient-image {
+  width: 100%;
+  height: auto;
+  max-width: 1376px;
+  border-radius: 24px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Overlay Content */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 75%;
+  color: white;
+  padding: 529px 64px 100px 64px;
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 100px;
+  font-family: "General Sans", sans-serif;
+  font-weight: 500;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+
+/* Sub-Content Styling */
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 427px;
+}
+
+.sub-content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28.8px;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 16px;
+}
+
+.primary-btn {
+  padding: 18px 36px;
+  background: white;
+  color: #1f1f1f;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 44px;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 18px 36px;
+  border-radius: 44px;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .overlay-content {
+    width: 75%;
+    padding: 529px 64px 100px 64px;
+  }
+
+  .main-heading {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+/* Medium Screens (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .gradient-box {
+    padding: 80px 48px 140px 48px;
+  }
+
+  .overlay-content {
+    width: 80%;
+    padding: 400px 48px 80px 48px;
+    justify-content: space-between;
+  }
+
+  .main-heading {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  .sub-content {
+    max-width: 80%;
+  }
+
+  .button-group {
+    gap: 24px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .overlay-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 32px;
+    gap: 24px;
+  }
+
+  .main-heading {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .sub-content {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Screens (480px - 768px) */
+@media (max-width: 768px) {
+  .overlay-content {
+    width: 90%;
+    padding: 60px 24px;
+  }
+
+  .main-heading {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .sub-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .overlay-content {
+    width: 95%;
+    padding: 40px 16px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .main-heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .sub-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}

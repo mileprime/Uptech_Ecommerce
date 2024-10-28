@@ -1,13 +1,24 @@
 import React from "react";
-import Header from "../Shared/header";
-import Footer from "../Shared/footer";
+import HomeSection from "../Shared/homeSection";
+import FeaturedProduct from "../Shared/featuredProduct";
+import ShopByCategory from "../Shared/ShopByCategory";
+import ExploreCollection from "../Shared/exploreCollection";
+import StayUpdated from "../Shared/StayUpdated";
+import BlogSection from "../Shared/BlogSection";
+import CustomPage from "../components/CustomPage";
 
 function Home() {
   return (
     <div>
       {" "}
-      <Header />
-      <Footer />
+      <CustomPage>
+        <HomeSection />
+        <FeaturedProduct />
+        <ShopByCategory />
+        <ExploreCollection />
+        <StayUpdated />
+        <BlogSection />
+      </CustomPage>
     </div>
   );
 }

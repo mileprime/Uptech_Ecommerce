@@ -1,0 +1,174 @@
+/* Header container styling */
+.header-container {
+  width: 100%;
+  padding: 24px 32px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 33px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 28.5px;
+  font-family: "General Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #1f1f1f;
+  text-transform: lowercase;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links span {
+  font-size: 14px;
+  font-family: "General Sans", sans-serif;
+  font-weight: 500;
+  color: #1f1f1f;
+  opacity: 0.8;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links span:hover {
+  color: #ef233c;
+}
+
+/* Action icons */
+.action-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.notification-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ef233c;
+  border-radius: 50%;
+}
+
+.badge-count {
+  font-size: 9px;
+  font-family: "General Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  line-height: 9px;
+}
+
+/* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
+
+/* Tablet Screens (768px and smaller) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navigation links on smaller screens */
+  }
+
+  .header-container {
+    padding: 16px; /* Reduce padding */
+  }
+
+  .logo-text {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .action-icons {
+    gap: 8px; /* Reduce spacing between icons */
+  }
+}
+
+/* Mobile Screens (480px and smaller) */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column; /* Stack header items */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .logo-section {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .action-icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px; /* Adjust icon size */
+  }
+
+  .logo-text {
+    font-size: 20px; /* Smaller logo text for mobile */
+  }
+}
+
+/* Desktop Screens (1440px and larger) */
+@media (min-width: 1440px) {
+  .header-container {
+    padding: 32px 64px; /* Increase padding for large screens */
+  }
+
+  .nav-links span {
+    font-size: 16px; /* Larger font for desktop */
+  }
+
+  .action-icons {
+    gap: 24px; /* More spacing between icons */
+  }
+}

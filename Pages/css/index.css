@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 96px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 0) 0%,
+    rgba(31, 31, 31, 0.6) 100%
+  );
+  border-radius: 24px;
+  margin: 40px 32px;
+  padding: 80px 96px;
+  color: white;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 18px 36px;
+  border-radius: 44px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.primary-btn {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.featured-products {
+  margin: 80px 96px;
+}
+
+.featured-products h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 80px 96px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.subscribe-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.subscribe-input input {
+  padding: 16px;
+  border-radius: 46px;
+  border: 1px solid rgba(31, 31, 31, 0.15);
+  flex: 1;
+}
+
+.subscribe-input button {
+  padding: 18px 36px;
+  background-color: #ef233c;
+  border: none;
+  color: white;
+  border-radius: 44px;
+  cursor: pointer;
+}
