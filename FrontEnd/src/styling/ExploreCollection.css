@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 products per row */
   gap: 24px; /* Space between products */
-  width: 1248px;
+  /* width: 1248px; */
   margin: 0 auto;
 }
 

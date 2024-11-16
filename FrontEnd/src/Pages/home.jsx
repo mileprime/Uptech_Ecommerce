@@ -10,14 +10,13 @@ import CustomPage from "../components/CustomPage";
 function Home() {
   return (
     <div>
-      {" "}
       <CustomPage>
         <HomeSection />
         <FeaturedProduct />
-        <ShopByCategory />
-        <ExploreCollection />
-        <StayUpdated />
-        <BlogSection />
+        {/* <ShopByCategory /> */}
+        {/* <ExploreCollection /> */}
+        {/* <StayUpdated /> */}
+        {/* <BlogSection /> */}
       </CustomPage>
     </div>
   );
